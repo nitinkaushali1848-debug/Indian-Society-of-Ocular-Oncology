@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Backend Logics
 app.get('/api', (req, res) => {
-  res.json({ message: 'IIOO website is running!' });
+  res.json({ message: 'IndSOO website is running!' });
 });
 
 // Start the server
