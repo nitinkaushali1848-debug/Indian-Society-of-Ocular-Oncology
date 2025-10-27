@@ -4,7 +4,7 @@
 ===========================*/
 :root {
   --font-family: "Inter", sans-serif;
-  --primary: #b80233;
+  --primary: #640d14;
   --primary-dark: #1c3ab6;
   --primary-light: #e2f1ff;
   --accent: #00d4d7;
@@ -431,6 +431,7 @@ p {
   top: 0;
   width: 100%;
   z-index: 9;
+  box-shadow:50px -35px 50px 27px #1d1d1d;
 }
 .sticky {
   position: fixed !important;
@@ -970,6 +971,14 @@ p {
   text-align: left;
 }
 .header-eight .header-content h1 {
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  color: var(--white);
+  text-shadow: 0px 3px 8px #00000017;
+  text-transform: capitalize;
+}
+.header-eight .header-content h4 {
+  font-family: "inter", sans-serif;
   font-weight: 700;
   color: var(--white);
   text-shadow: 0px 3px 8px #00000017;
