@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Backend Logics
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
   res.render('../views/pages/index.ejs');
 });
 
