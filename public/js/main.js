@@ -65,8 +65,8 @@
 
 //Typing Animation Hero-Head
 const phrases = [
-  "Eye 'Can'cers!",
-  "I 'Can'!"
+  "I 'Can'!",
+  "We 'Can'!" 
 ];
 
 const typedText = document.querySelector(".typed-text");

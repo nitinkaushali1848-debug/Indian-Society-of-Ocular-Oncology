@@ -974,7 +974,7 @@ p {
   z-index: 1;
   text-align: left;
 }
-.header-eight .header-content h1 {
+.header-eight .header-content h2 {
   font-family: "Roboto Slab", serif;
   font-weight: 600;
   color: var(--white);
