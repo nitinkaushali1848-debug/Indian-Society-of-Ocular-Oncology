@@ -11,6 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Backend Logics
 app.get('/', (req, res) => {
+  console.log(Object.keys(req.ip).length) // for fun - test hurray
   res.render('../views/pages/index.ejs');
 });
 
