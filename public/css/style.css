@@ -409,7 +409,7 @@ p {
  
  /* Link */
  .navbar-area .container .row .col-lg-14 .navbar #navbarNine .navbar-nav .nav-item a{
-  padding-right:51px !important;
+  padding-right:45px !important;
  }
  
 }
@@ -434,6 +434,12 @@ p {
   z-index: 9;
   box-shadow:50px -35px 50px 27px #1d1d1d;
 }
+
+#navbarNine {
+width : 840px;
+max-width : 840px;
+}
+
 .sticky {
   position: fixed !important;
   z-index:99 !important;
@@ -956,7 +962,7 @@ p {
 }
 @media (max-width: 767px) {
   .header-eight {
-    padding: 100px 0 60px 0;
+    padding: 150px 0 60px 0;
   }
 }
 .header-eight .header-image img {
