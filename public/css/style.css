@@ -196,7 +196,7 @@ p {
   }
 }
 
-.btn {
+.btnc {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -207,49 +207,49 @@ p {
   border-radius: 4px;
   border: 1px solid transparent;
 }
-.btn:hover {
+.btnc:hover {
   color: inherit;
 }
-.btn:focus {
+.btnc:focus {
   box-shadow: none;
   outline: none;
 }
-.btn.btn-lg {
+.btnc.btnc-lg {
   font-size: 1.15em;
   padding: 16px 24px;
 }
-.btn.btn-sm {
+.btnc.btnc-sm {
   padding: 8px 16px;
 }
-.btn.square {
+.btnc.square {
   border-radius: 0px;
 }
-.btn.semi-rounded {
+.btnc.semi-rounded {
   border-radius: 12px;
 }
-.btn.rounded-full {
+.btnc.rounded-full {
   border-radius: 50px;
 }
-.btn.icon-left span,
-.btn.icon-left i {
+.btnc.icon-left span,
+.btnc.icon-left i {
   margin-right: 8px;
 }
-.btn.icon-right span,
-.btn.icon-right i {
+.btnc.icon-right span,
+.btnc.icon-right i {
   margin-left: 8px;
 }
-.btn.icon-btn {
+.btnc.icon-btnc {
   width: 48px;
   height: 48px;
   padding: 0;
   line-height: 48px;
 }
-.btn.icon-btn.btn-lg {
+.btnc.icon-btnc.btnc-lg {
   width: 56px;
   height: 56px;
   line-height: 56px;
 }
-.btn.icon-btn.btn-sm {
+.btnc.icon-btnc.btnc-sm {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -257,7 +257,7 @@ p {
 
 
 /* ===== Buttons Css ===== */
-.primary-btn {
+.primary-btn{
   background: var(--primary);
   color: var(--white);
   box-shadow: var(--shadow-2);
@@ -1825,10 +1825,7 @@ max-width : 840px;
 
 /* Footer eleven css */
 .footer-eleven {
-  /*CSS_EDIT3_Start_Nitin Kaushal -  to decrease the size of footer*/
-  padding-top: 50px;
-  padding-bottom: 50px;
-  /*CSS_EDIT3_Ends*/
+  padding-top: 20px;
   background-color: var(--white);
   position: relative;
 }
@@ -1957,3 +1954,4 @@ max-width : 840px;
   color: var(--white);
   background-color: var(--primary-dark);
 }
+
