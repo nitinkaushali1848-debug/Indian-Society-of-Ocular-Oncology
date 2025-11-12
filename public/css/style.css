@@ -984,7 +984,7 @@ max-width : 840px;
   font-family: "Roboto Slab", serif;
   font-weight: 600;
   color: var(--white);
-  text-shadow: 10px 10px 10px #00000017;
+  text-shadow: 15px 15px 15px #00000017;
   text-transform: capitalize;
 }
 .header-eight .header-content h4 {

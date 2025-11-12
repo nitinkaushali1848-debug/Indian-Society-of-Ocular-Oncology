@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
 /* Login Page Styles */
 .login-section {
   display: flex;
@@ -7,21 +8,21 @@
   animation: fadeSlide 1.2s ease-out;
   margin-top: 2px;
 }
-.header-image{
-    margin-left: 100px;
-    margin-top: 65px;
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+.header-image {
+  margin-left: 100px;
+  margin-top: 65px;
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 .box {
   width: 360px;
   font-family: "Roboto Slab", serif;
-  background: #67161C;
+  background: #67161c;
   padding: 40px;
-  border: dotted 2px #67161C;
+  border: dotted 2px #67161c;
   border-radius: 10px;
   margin-right: 100px;
   margin-top: 65px;
@@ -37,7 +38,7 @@
 }
 
 .box h4 i {
-  color: var(--accent, #C15400) !important;
+  color: #c15400;
   margin-right: 8px;
   font-size: 1.2em;
   vertical-align: middle;
@@ -49,7 +50,6 @@
   transform: scale(1.1);
 }
 
-
 .box input[type="text"],
 .box input[type="password"] {
   display: block;
@@ -58,7 +58,7 @@
   padding: 10px;
   border: none;
   background: #fff;
-  color: #67161C;
+  color: #67161c;
   border-radius: 5px;
   transition: 0.25s;
 }
@@ -73,7 +73,10 @@
 .box input[type="submit"] {
   margin-top: 15px;
   width: 80%;
-  background: var(--accent, #C15400);
+  box-shadow: rgb(43, 42, 42) 0px 4px 14px;
+  border-radius: 40px;
+  background-image: linear-gradient(120deg, rgb(0, 0, 0), rgb(28, 58, 182) 50%);
+  font-family: Roboto Slab, serif;
   color: white;
   border: none;
   padding: 10px;
@@ -84,8 +87,7 @@
 }
 
 .box input[type="submit"]:hover {
-  background: var(--accent-dark, #C15400);
-  transform: translateY(-2px);
+  transform: scale(1.02);
 }
 
 .forgot {
@@ -98,8 +100,8 @@
 }
 
 .forgot:hover {
-  color: var(--accent, #C15400);
-  text-decoration: underline;
+  color: azure;
+  transform: scale(1.02);
 }
 
 @keyframes fadeSlide {
@@ -112,18 +114,18 @@
     transform: translateY(0);
   }
 }
-/* ✅ Responsive layout for image + form together */
+/* Responsive layout for image + form together */
 @media (max-width: 1024px) {
   .login-section {
     margin-top: 80px;
-    flex-direction: column;        /* stack vertically */
+    flex-direction: column; /* stack vertically */
     align-items: center;
     justify-content: center;
     padding: 40px 0;
   }
 
   .header-image {
-    margin: 0 0 30px 0;            /* reset side margins */
+    margin: 0 0 30px 0; /* reset side margins */
     width: 80%;
     max-width: 500px;
     height: auto;
