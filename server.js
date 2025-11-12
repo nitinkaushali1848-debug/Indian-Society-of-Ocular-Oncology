@@ -10,11 +10,14 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Backend Logics
+
+// Index Page
 app.get('/', (req, res) => {
   console.log(Object.keys(req.ip).length) // for fun - test hurray
   res.render('../views/pages/index.ejs');
 });
 
+//Login Form Page
 app.get('/login', (req, res) => {
   res.render('../views/pages/login.ejs');
 });
