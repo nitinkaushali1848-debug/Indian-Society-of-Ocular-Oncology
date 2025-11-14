@@ -434,11 +434,6 @@ p {
   box-shadow:50px -35px 50px 27px #1d1d1d;
 }
 
-#navbarNine {
-width : 840px;
-max-width : 840px;
-}
-
 .sticky {
   position: fixed !important;
   z-index:99 !important;
@@ -537,7 +532,7 @@ max-width : 840px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-area.navbar-nine .navbar .navbar-nav .nav-item a {
-    padding: 10px 0;
+    padding: 10px 28px;
     display: block;
     border: 0;
     margin: 0;
@@ -684,7 +679,7 @@ max-width : 840px;
 }
 @media (max-width: 767px) {
   .navbar-area.navbar-nine .navbar .navbar-nav .nav-item .sub-menu li .sub-menu {
-    padding-left: 30px;
+    padding-left: 20px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -923,7 +918,6 @@ max-width : 840px;
 .overlay-left.open {
   display: block;
 }
-
 
 /* ===== Buttons Css ===== */
 .header-eight .primary-btn {
