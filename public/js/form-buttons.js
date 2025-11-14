@@ -4,7 +4,7 @@ document.querySelector('.loginform-btn')
   ?.addEventListener('click', () => window.location.href = '/login');
 
 //register form
-document.querySelector('#registerS')
+document.querySelector('#register')
   ?.addEventListener('click', () => window.location.href = '/register');
 
 
