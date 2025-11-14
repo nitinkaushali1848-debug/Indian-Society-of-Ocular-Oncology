@@ -29,7 +29,10 @@
     <link rel="stylesheet" href="/css/glightbox.min.css" />
 
     <!--====== FontAwesome css ======-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/animation_edits.css" />
@@ -44,7 +47,7 @@
         <div class="row">
           <div class="col-lg-14">
             <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="/" style="color: azure" !important>
+              <a class="navbar-brand" href="/">
                 <img src="/images/logo.svg" alt="Logo" />
               </a>
               <button
@@ -155,55 +158,17 @@
     <div class="overlay-left"></div>
 
     <!--====== SIDEBAR PART ENDS ======-->
-
-    <!-- Nav bar - Left side toggle SIDEBAR JS - START -->
-    <script>
-      //===== close navbar-collapse when a  clicked
-      let navbarTogglerNine = document.querySelector(
-        ".navbar-nine .navbar-toggler"
-      );
-      navbarTogglerNine.addEventListener("click", function () {
-        navbarTogglerNine.classList.toggle("active");
-      });
-
-      // ==== left sidebar toggle
-      let sidebarLeft = document.querySelector(".sidebar-left");
-      let overlayLeft = document.querySelector(".overlay-left");
-      let sidebarClose = document.querySelector(".sidebar-close .close");
-
-      overlayLeft.addEventListener("click", function () {
-        sidebarLeft.classList.toggle("open");
-        overlayLeft.classList.toggle("open");
-      });
-      sidebarClose.addEventListener("click", function () {
-        sidebarLeft.classList.remove("open");
-        overlayLeft.classList.remove("open");
-      });
-
-      // ===== navbar nine sideMenu
-      let sideMenuLeftNine = document.querySelector(".navbar-nine .menu-bar");
-
-      sideMenuLeftNine.addEventListener("click", function () {
-        sidebarLeft.classList.add("open");
-        overlayLeft.classList.add("open");
-      });
-
-      //========= glightbox
-      GLightbox({
-        href: "https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM",
-        type: "video",
-        source: "youtube", //vimeo, youtube or local
-        width: 900,
-        autoplayVideos: true,
-      });
-    </script>
-    <!-- Nav bar - Left side toggle SIDEBAR JS - END -->
     <!-- Hero Section -->
     <!-- Login Section -->
     <section class="login-section header-area header-eight">
       <form class="box" action="/login" method="POST">
-        <h4>  <i class="fas fa-user-graduate"></i>Member Login</h4>
-        <input type="text" name="username" placeholder="Membership No." required />
+        <h4><i class="fas fa-user-graduate"></i>Member Login</h4>
+        <input
+          type="text"
+          name="username"
+          placeholder="Membership No."
+          required
+        />
         <input
           type="password"
           name="password"
@@ -212,12 +177,23 @@
         />
         <input type="submit" value="Sign In" />
         <a href="/forgot-password" class="forgot">Forgot Password?</a>
+        <input
+          id="register"
+          type="button"
+          value="Not a member? Register here."
+        />
       </form>
-    <div class="header-image"><img src="/images/header/hero-image51.png" alt="#" /></div>
+      <div class="header-image">
+        <img src="/images/header/hero-image51.png" alt="#" />
+      </div>
     </section>
     <!-- Start Footer Area -->
     <%- include ('../partials/footer') %>
     <!-- Ejs Footer partial rendering-->
+    <!-- Scripts -->
+    <script src="/js/side-bar.js"></script>
+    <script src="/js/form-buttons.js"></script>
+    <!-- Scripts area end -->
     <!--/ End Footer Area -->
   </body>
 </html>
