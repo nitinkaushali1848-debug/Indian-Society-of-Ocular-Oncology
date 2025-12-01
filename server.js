@@ -7,6 +7,7 @@ import helmet from "helmet";
 import session from "express-session";
 import MongoStore from "connect-mongo";
 import rateLimit from "express-rate-limit";
+import multer from "multer";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -73,7 +74,23 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 
+//DB Connection
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(()=> console.log("MongoDB Atlas connected"))
+.catch(err => {
+  console.error("MongoDB connect error:", err);
+  process.exit(1); // stop if DB not available
+});
+
+//for dev env only
+app.use("/uploads/members", express.static(path.join(__dirname, "public", "uploads", "members")));
+
 //Backend Logics
+
+var upload = multer({dest: '/uploads'});
 
 // Index Page
 app.get("/", (req, res) => {
@@ -88,7 +105,12 @@ app.get("/login", (req, res) => {
 
 //member registeration online/offline forms
 app.get("/member-registration", (req, res) =>{
-  res.render("../views/pages/mem-registration.ejs");
+  res.render("../views/pages/memRegistration.ejs");
+});
+
+//administator singin 
+app.get("/administrator-login", (req, res) =>{
+  res.render("../views/pages/adminLogin.ejs");
 });
 
 // Start the server
