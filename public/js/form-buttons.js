@@ -7,5 +7,7 @@ document.querySelector('.loginform-btn')
 document.querySelector('#register')
   ?.addEventListener('click', () => window.location.href = '/member-registration');
 
-
-
+//administrator sign-in button
+document.querySelector('#admin-signin')
+  ?.addEventListener('click', () => window.location.href = '/administrator-login');
+ 
