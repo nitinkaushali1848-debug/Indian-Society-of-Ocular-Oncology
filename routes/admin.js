@@ -100,7 +100,7 @@ router.post("/requests/:id/approve", requireAdmin, async (req, res) => {
       paymentMode: reqDoc.paymentMode,
       source: reqDoc.source,
       user: user ? user._id : null,
-      files: reqDoc.files
+      files: reqDoc.files // also to add the facility to upload and update* the profile picture later
     }], { session }).then(arr => arr[0]);
 
     // delete request
@@ -110,7 +110,6 @@ router.post("/requests/:id/approve", requireAdmin, async (req, res) => {
     session.endSession();
 
     // optionally email member about approval here
-
     return res.redirect("/admin/requests");
   } catch (err) {
     await session.abortTransaction();
@@ -129,7 +128,7 @@ router.post("/requests/:id/reject", requireAdmin, async (req, res) => {
     return res.redirect("/admin/requests");
   } catch (err) {
     console.error("reject error:", err);
-    return res.status(500).send("Error");
+    return res.status(500).send("Error"); //status error code 500 pumped
   }
 });
 
